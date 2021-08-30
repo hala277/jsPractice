@@ -180,6 +180,7 @@ let orders = [];
 container.appendChild(tableEL);
 
 // to save in local storage andd make the obj string.
+
 function saveToLocalStorage(){
     let data = JSON.stringify(orders);
     localStorage.setItem('Orders',data);
@@ -192,7 +193,7 @@ function readFrofLocalStorage(){
 
     if(normalObj){
         orders = normalObj;
-        render();
+       
     }
 }
 readFrofLocalStorage();
@@ -272,7 +273,9 @@ let  jo = new  Orders('laviva','choclite milk','irbid');
 
 for(let i = 0 ; i<orders.length ; i++){
     orders[i].render();
+  
 }
+
 
 
 
