@@ -268,13 +268,17 @@ createTableHeader();
 // creatTableFooter();
 
 let hala = new Orders('laviva','dark','amman');
+hala.render();
 let leen = new  Orders('laviva','choclite milk','amman');
+leen.render();
 let  jo = new  Orders('laviva','choclite milk','irbid');
+jo.render();
 
-for(let i = 0 ; i<orders.length ; i++){
-    orders[i].render();
+// for(let i = 0 ; i<orders.length ; i++){
+//     // new Orders(normalObj[i].render());
+//     orders[i].render();
   
-}
+// }
 
 
 

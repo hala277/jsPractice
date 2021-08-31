@@ -48,7 +48,9 @@ function addNewGrade (event){
     //  newGrade.getNumberOfStuden();
       newGrade.render();
       saveToLocalStorage();
+    //  myForm.removeEventListener('submit',addNewGrade);
 }
+
 
 function creatTableHeader(){
     let trEl = document.createElement('tr');
@@ -102,11 +104,12 @@ StudensGrades.prototype.render = function(){
 }
 
 let ahmad = new StudensGrades('ahmad',20,10,2);
-// ahmad.render();
+ ahmad.render();
 let leen  = new StudensGrades('Leen',20,20,2);
+leen.render();
 let jo = new StudensGrades('jo',20,15,2);
-
-for(let i = 0 ; i<studensGrades.length ; i++){
-    studensGrades[i].render();
+jo.render();
+// for(let i = 0 ; i<studensGrades.length ; i++){
+//     studensGrades[i].render();
   
-}
+// }
